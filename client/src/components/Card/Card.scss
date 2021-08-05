@@ -1,0 +1,36 @@
+.card {
+  padding: 2em 1em;
+  background-color: #eee;
+  * {
+    color: #333;
+  }
+}
+.card-header {
+  color: #1877f2;
+  font-size: 1.7em;
+}
+.username-div,
+.password-div {
+  margin: 2em 0;
+}
+input {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #333;
+  font-size: 1.2em;
+  &:focus {
+    outline: none;
+  }
+}
+.cta-submit {
+  margin-top: 2em;
+  font-size: 1.2em;
+  padding: 0.5em 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #1877f2;
+  color: #fff;
+  cursor: pointer;
+}

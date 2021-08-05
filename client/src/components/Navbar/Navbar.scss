@@ -1,0 +1,25 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1877f2;
+  padding: 2em 1em;
+  * {
+    color: white;
+  }
+}
+.nav-header {
+  font-size: 2em;
+}
+.nav-ul {
+  align-items: center;
+  display: flex;
+  gap: 1em;
+  list-style: none;
+  li {
+    font-size: 1.5em;
+    a {
+      text-decoration: none;
+    }
+  }
+}

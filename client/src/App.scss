@@ -1,0 +1,28 @@
+* {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 80%;
+  margin: 1em auto;
+}
+
+.home-info {
+  display: grid;
+  padding: 1em;
+  place-content: center;
+  background-color: #eee;
+  font-size: 1.5em;
+  color: #333;
+  opacity: 0.8;
+}
+main {
+  margin: 1em 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1em;
+}
