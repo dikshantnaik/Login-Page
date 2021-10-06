@@ -1,6 +1,7 @@
 import Express from "express";
 import mysql from "mysql";
 import cors from "cors";
+import bodyParser from "body-parser";
 
 console.clear();
 
@@ -15,6 +16,7 @@ const database = mysql.createConnection({
 
 app.use(Express.json());
 app.use(cors());
+app.use(bodyParser.json());
 database.connect();
 
 app.get("/", (req, res) => {
@@ -37,8 +39,6 @@ app.post("/register", (req, res) => {
   }
 });
 app.post("/login", (req, res) => {
-  //db = college_testing
-  //table = users
   let sql = `SELECT * from user_data where username="${req.body.login_username}"`;
   database.query(sql, (err, result) => {
     try {
